@@ -1,3 +1,7 @@
+# Quiz  using python
+
+
+# Lists of many questions with their answers
 questions = [
     {
         "question": "Which is the highest mountain peak in the world?",
@@ -37,13 +41,12 @@ questions = [
     }
 ]
 
-
 correctAns = 0
 wrongAns = 0
 leaveAns = 0
 
 for c in questions :
-   ask = input(c["question"])
+   ask = input(c["question"])  
    if(ask.lower() == c["answer"].lower()) : 
        correctAns = correctAns + 1
    elif(ask == "") :
@@ -52,5 +55,5 @@ for c in questions :
        wrongAns = wrongAns + 1
 
 
-print(f"You have given {correctAns} correct answers out of {len(questions)}")
+print(f"You have given '{correctAns}' correct answers out of '{len(questions)}' ")
 print(f"Correct Ans : {correctAns}\n Wrong Ans : {wrongAns} \n Leave Ans : {leaveAns}")

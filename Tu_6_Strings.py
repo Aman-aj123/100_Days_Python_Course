@@ -13,6 +13,7 @@ print(len(name))  # Use to print the total length of the string
 
 print(name.upper()) # print the character in 'Uppercase'
 print(name.lower()) # print the character in 'Lowercase'
+print( "   Remove white space   ".strip()) # It removes the extra white spaces
 print(name.rstrip("#")) # It removes a particular character from the string
 print(name.replace("A", "R")) # It replace a particular character 
 print(name.split(" ")) # It will split the string with the given character and return an array
